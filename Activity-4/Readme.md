@@ -7,8 +7,10 @@ In the `admin.html` file, under the setName function, write a function to POST t
 
 ```
 var newTask = {
-          task: $("#task").val(),
-        }
+
+          task: $("#task").val()
+}
+
 ```
 
 Be sure to add an action listener that calls this function when you click the todo plus sign
@@ -16,6 +18,7 @@ Be sure to add an action listener that calls this function when you click the to
 ```
 $("#task").on('keyup', setTodo);
 ```
+
 #### Back-end
 In the `apiRoutes.js` file, underneath the `app.post('/name'...)` route, add a new POST route. You can copy paste the `app.post('/name'...)` route to get you started. The path for your new route should be `'/todo'`.
 
